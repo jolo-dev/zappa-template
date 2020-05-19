@@ -1,0 +1,7 @@
+{
+  "project_name": "Zappa Project",
+  "project_slug": "{{ cookiecutter.project_name.lower()|replace(' ', '_')|replace('-', '_') }}",
+  "author_name": "Jolo Dev",
+  "dough": ["Flask", "Django"],
+  "aws_bucket_name": "{{ cookiecutter.project_slug|replace('_', '-') }}-{{ cookiecutter.author_name|replace(' ', '-') }}"
+}
