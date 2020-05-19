@@ -1,0 +1,10 @@
+
+---
+dev:
+  {% if cookiecutter.engine == "Flask" %}
+  app_function: app.app
+  {% endif %}
+  {% if cookiecutter.engine == "Django" %}
+  django_settings: {{ cookiecutter.project_slug }}.settings
+  {% endif %}
+  s3_bucket: {{ cookiecutter.aws_bucket_name }}

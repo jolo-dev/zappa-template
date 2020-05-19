@@ -1,0 +1,7 @@
+{% if cookiecutter.engine == "Flask" %}
+Flask==1.1.2
+{% endif %}
+{% if cookiecutter.engine == "Django" %}
+Django==3.0.6
+{% endif %}
+zappa==0.51.0
