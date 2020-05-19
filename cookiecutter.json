@@ -3,5 +3,5 @@
   "project_slug": "{{ cookiecutter.project_name.lower()|replace(' ', '_')|replace('-', '_') }}",
   "author_name": "Jolo Dev",
   "engine": ["Flask", "Django"],
-  "aws_bucket_name": "{{ cookiecutter.project_slug|replace('_', '-') }}-{{ cookiecutter.author_name|replace(' ', '-') }}"
+  "aws_bucket_name": "{{ cookiecutter.project_slug|replace('_', '-') }}-{{ cookiecutter.author_name.lower()|replace(' ', '-') }}"
 }

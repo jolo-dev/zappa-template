@@ -1,11 +1,12 @@
 import os
+import shutil
 
 engine = "{{ cookiecutter.engine }}"
 project = "{{ cookiecutter.project_slug }}"
-os.chdir(project)
+
 if engine == "Flask":
     os.remove("manage.py")
-    os.rmdir(project)
-
-if engine == "Django":
+    shutil.rmtree(project, ignore_errors=True)
+    
+elif engine == "Django":
     os.remove("app.py")
