@@ -3,5 +3,6 @@ Flask==1.1.2
 {% endif %}
 {% if cookiecutter.engine == "Django" %}
 Django==3.0.6
+django-s3-storage==0.13.0
 {% endif %}
 zappa==0.51.0

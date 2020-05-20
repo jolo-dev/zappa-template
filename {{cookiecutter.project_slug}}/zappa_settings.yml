@@ -1,6 +1,9 @@
 
 ---
 dev:
+  runtime: python3.8,
+  profile_name: default,
+  project_name: {{ cookiecutter.project_slug }},
   {% if cookiecutter.engine == "Flask" %}
   app_function: app.app
   {% endif %}
