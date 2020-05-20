@@ -102,7 +102,7 @@ USE_TZ = True
 
 STATIC_URL = "/static/"
 
-YOUR_S3_BUCKET = "{{ cookiecutter.project_slug }}-{{ cookiecutter.engine.lower() }}"
+YOUR_S3_BUCKET = "{{ cookiecutter.project_slug.replace('_', '-') }}-{{ cookiecutter.engine.lower() }}"
 
 STATICFILES_STORAGE = "django_s3_storage.storage.StaticS3Storage"
 AWS_S3_BUCKET_NAME_STATIC = YOUR_S3_BUCKET
